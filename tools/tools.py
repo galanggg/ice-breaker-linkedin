@@ -1,7 +1,7 @@
 from langchain_community.tools.tavily_search import TavilySearchResults
 import os
 
-os.environ["TAVILY_API_KEY"] = "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"
+os.environ["TAVILY_API_KEY"] = os.getenv("TAVILY_API_KEY")
 
 
 def get_profile_url_tavily(name: str):
